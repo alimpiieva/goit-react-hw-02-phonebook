@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const ContactsFilter = ({ filter, onFilterChange }) => {
   return (
@@ -11,5 +12,10 @@ const ContactsFilter = ({ filter, onFilterChange }) => {
     />
   );
 };
+
+ContactsFilter.propTypes = {
+  filter: PropTypes.string.isRequired,
+  onFilterChange: PropTypes.func.isRequired,
+}
 
 export default ContactsFilter;

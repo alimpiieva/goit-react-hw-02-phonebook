@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 import { LabelForm, Label, InputField, SubmitButton } from './ContactForm.styled';
 
+
 class ContactForm extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      name: '',
-      number: ''
-    };
-  }
+  state = {
+        name: '',
+        number: ''
+      };
+  
 
   handleSubmit = e => {
     e.preventDefault();
@@ -56,5 +55,7 @@ class ContactForm extends Component {
     );
   }
 }
+
+
 
 export default ContactForm;
